@@ -9,7 +9,16 @@
             "-prefix": "mojito_app_hybrid_example/tablet",
             "prefix": "",
             "appName": "yahoo.hybrid.app",
-            "frameworkName": "yahoo.hybrid.mojtio"
+            "frameworkName": "yahoo.hybrid.mojito"
+        },
+        "mojitsDirs": [
+            "mojits",
+            "node_modules/mojito-firstbyte/mojits"
+        ],
+        "viewEngine": {
+            "mu": {
+                "bufferOutput": true
+            }
         },
         "log": {
             "client": {
@@ -17,8 +26,8 @@
                 "yui": false
             },
             "server": {
-                "level": "info",
-                "yui": false
+                "level": "debug",
+                "yui": true
             }
         },
         "builds": {

@@ -1,0 +1,31 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "type": "FirstByteFrameMojit",
+        "shareYUIInstance": false,
+        "config": {
+            "title": "News Headlines",
+            "child": {
+                "type": "Layout",
+                "action": "index",
+                "config": {
+                    "children": {
+                        "XXXX": {
+                            "type": "yahoo.hybrid.app_nav"
+                        }
+                    }
+                }
+            },
+            "assets": {
+                "top": {
+                    "blob": [],
+                    "css": [
+                        "http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css",
+                        "http://yui.yahooapis.com/3.5.1/build/cssfonts/cssfonts-min.css"
+                    ]
+                }
+            }
+        }
+    }
+]

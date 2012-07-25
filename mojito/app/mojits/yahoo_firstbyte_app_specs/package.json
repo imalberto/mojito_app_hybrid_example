@@ -1,0 +1,9 @@
+{
+    "name": "yahoo.firstbyte.app_specs",
+
+    "yahoo": {
+        "mojito": {
+            "version": "*"
+        }
+    }
+}

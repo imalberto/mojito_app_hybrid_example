@@ -13,7 +13,10 @@
         },
 
 
-
+        "firstbyte": {
+            "path": "/firstbyte",
+            "call": "yahoo.firstbyte.app_specs.index"
+        },
 
         
         "for_gh_pages_tablet_example": {
