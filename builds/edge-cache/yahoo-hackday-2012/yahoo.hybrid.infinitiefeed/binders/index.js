@@ -60,7 +60,7 @@ YUI.add('infinitie_feed_binder_index', function (Y, NAME) {
     function isUnique(item) {
 
         var href = item.one("a").get("href"),
-            title = item.one("a").get("text").toLowerCase().replace(/[^a-z]/g, "");
+            title = item.one("a").getAttribute("alt").toLowerCase().replace(/[^a-z]/g, "");
 
         if (urlsOnPage[href] || titlesOnPage[title]) {
             return false;
