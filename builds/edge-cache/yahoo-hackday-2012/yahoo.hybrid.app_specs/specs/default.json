@@ -3,7 +3,7 @@
     "shareYUIInstance": true,
     "config": {
         "deploy": true,
-        "title": "Infinite Y!",
+        "title": "Cuppa Joe News",
         "child": {
             "type": "yahoo.hybrid.infinite_nav"
         },
@@ -22,7 +22,7 @@
     },
     "id": "yahoo.hybrid.app_specs",
     "action": "index",
-    "instanceId": "yui_3_5_1_2_6_1345598419823_19936",
+    "instanceId": "yui_3_5_1_2_6_1345651772712_20006",
     "appConfig": {
         "mojitsDirs": [
             "mojits"
