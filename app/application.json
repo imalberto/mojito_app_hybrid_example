@@ -11,7 +11,8 @@
         },
         "builds": {
             "html5app": {
-                "urls": [
+                "-forceRelativePaths": true,
+                "-urls": [
                     "/yahoo.application.mojito_app_hybrid_example/index.html"
                 ]
             }
@@ -40,19 +41,24 @@
     {
         "settings": [ "environment:prod-native-ycrt" ],
 
-        "staticHandling": {
-            "prefix": ""
-        },
-
         "yui": {
             "base": "/yahoo.libs.yui/assets/"
+        },
+        "builds": {
+            "html5app": {
+                "urls": [
+                    "/yahoo.application.mojito_app_hybrid_example/index.html"
+                ]
+            }
         }
     },
     {
         "settings": [ "environment:prod-webapp" ],
 
-        "staticHandling": {
-            "prefix": "yahoo-hackday-2012"
+        "builds": {
+            "html5app": {
+                "forceRelativePaths": true
+            }
         }
     }
 ]
