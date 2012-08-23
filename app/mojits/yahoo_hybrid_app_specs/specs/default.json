@@ -6,7 +6,7 @@
         "shareYUIInstance": true,
         "config": {
             "deploy": true,
-            "title": "Infinite Y!",
+            "title": "Cuppa Joe News",
             "child": {
                 "type": "yahoo.hybrid.infinite_nav"
             },

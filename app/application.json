@@ -12,7 +12,6 @@
         "builds": {
             "html5app": {
                 "urls": [
-                    "/index.html",
                     "/yahoo.application.mojito_app_hybrid_example/index.html"
                 ]
             }
