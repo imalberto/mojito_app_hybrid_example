@@ -8,5 +8,5 @@ Start the server;
 
     > ./scripts/start-server
 
-Open in a web broswer [http://localhost:8666/](http://localhost:8666/)
+Open in a web browser [http://localhost:8666/](http://localhost:8666/)
 
