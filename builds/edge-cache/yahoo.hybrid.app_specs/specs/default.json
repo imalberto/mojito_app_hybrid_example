@@ -11,7 +11,7 @@
             "top": {
                 "blob": [
                     "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
-                    "<link rel=\"apple-touch-icon\" href=\"/yahoo-hackday-2012/yahoo.hybrid.infinite_nav/assets/apple-app-icon.png\"/>",
+                    "<link rel=\"apple-touch-icon\" href=\"./yahoo.hybrid.infinite_nav/assets/apple-app-icon.png\"/>",
                     "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0\"/>"
                 ],
                 "css": [
@@ -22,7 +22,7 @@
     },
     "id": "yahoo.hybrid.app_specs",
     "action": "index",
-    "instanceId": "yui_3_5_1_2_6_1345822914443_20031",
+    "instanceId": "yui_3_5_1_2_6_1346117145204_19971",
     "appConfig": {
         "mojitsDirs": [
             "mojits"
@@ -42,11 +42,10 @@
         },
         "builds": {
             "html5app": {
-                "-forceRelativePaths": true,
+                "forceRelativePaths": true,
                 "-urls": [
                     "/yahoo.application.mojito_app_hybrid_example/index.html"
-                ],
-                "forceRelativePaths": true
+                ]
             }
         },
         "log": {
