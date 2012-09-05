@@ -4,7 +4,7 @@ echo "Building App"
 rm -r ./builds/ycrt/ios/packages*
 
 cd ./app
-./node_modules/mojito/bin/mojito build html5app --context environment:prod-native-ycrt ../builds/ycrt/ios/packages
+mojito build html5app --context environment:prod-native-ycrt ../builds/ycrt/ios/packages
 
 cd ../builds/ycrt/ios/packages
 rm -r ./HTMLFrameMojit

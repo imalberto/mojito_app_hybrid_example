@@ -22,7 +22,7 @@
     },
     "id": "yahoo.hybrid.app_specs",
     "action": "index",
-    "instanceId": "yui_3_5_1_2_6_1345699515430_20823",
+    "instanceId": "yui_3_5_1_2_6_1346864575611_20889",
     "appConfig": {
         "mojitsDirs": [
             "mojits"
@@ -45,6 +45,7 @@
         },
         "builds": {
             "html5app": {
+                "-forceRelativePaths": true,
                 "urls": [
                     "/yahoo.application.mojito_app_hybrid_example/index.html"
                 ]

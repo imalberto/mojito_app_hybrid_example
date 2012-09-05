@@ -3,7 +3,7 @@
 rm -rf ./builds/edge-cache*
 
 cd ./app
-./node_modules/mojito/bin/mojito build html5app --context environment:prod-webapp ../builds/edge-cache
+mojito build html5app --context environment:prod-webapp ../builds/edge-cache
 
 cd ../builds/edge-cache
 

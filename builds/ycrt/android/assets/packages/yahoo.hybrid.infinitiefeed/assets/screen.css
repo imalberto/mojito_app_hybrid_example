@@ -7,7 +7,7 @@
 }
 
 .feed li {
-	/*position: relative;*/
+	position: relative;
 	vertical-align: top;
 	display: inline-block;
 	width: 100%;
@@ -29,7 +29,7 @@
 	border: 1px dashed #ccc;
 }
 
-.card h3 a {
+.card h3 {
 	display: block;
 	color: #024A68;
 	font-size: 150%;
@@ -48,8 +48,22 @@
 .card .date {
 	display: block;
 	color: #BF7C30;
-	padding: 0.5em 0 0 0;
+	padding: 0.5em 0 1em 0;
 	font-size: 90%;
+}
+
+.card .tools {
+	position: absolute;
+	right: 1.5em;
+	bottom: 1em;
+	text-align: right;
+	padding-top: 0.3em;
+}
+
+.card .tools a {
+	text-decoration: none;
+	border-bottom: 1px dashed #888;
+	color: #888;
 }
 
 .small-text .body{
@@ -111,6 +125,10 @@
 	.feed li:nth-child(2n) .card {
 		margin-left: 0.5em;
 	}
+
+	.feed li:nth-child(2n) .card .tools {
+		padding-right: 0.5em;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -163,10 +181,25 @@
 		width: 24%;
 	}
 
+	.feed li:nth-child(3n-2) .card {
+		/*background: blue;*/
+		margin-right: 0.5em;
+	}
 	.feed li:nth-child(3n-1) .card {
 		/*background: blue;*/
-		margin-right: 0em;
-		margin-left: 0em;
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+	.feed li:nth-child(3n) .card {
+		/*background: blue;*/
+		margin-left: 0.5em;
+	}
+
+	.card .tools {
+		padding-right: 0em;
+	}
+	.feed li:nth-child(3n) .card .tools {
+		padding-right: 0.5em;
 	}
 }
 

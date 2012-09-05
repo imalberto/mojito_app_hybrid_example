@@ -739,7 +739,7 @@
         }
     },
     "action": "index",
-    "instanceId": "yui_3_5_1_2_6_1345699515430_20400",
+    "instanceId": "yui_3_5_1_2_6_1346864575611_20466",
     "appConfig": {
         "mojitsDirs": [
             "mojits"
@@ -762,6 +762,7 @@
         },
         "builds": {
             "html5app": {
+                "-forceRelativePaths": true,
                 "urls": [
                     "/yahoo.application.mojito_app_hybrid_example/index.html"
                 ]

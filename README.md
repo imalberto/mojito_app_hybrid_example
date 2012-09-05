@@ -4,6 +4,12 @@ Check out the application.
 
     > git clone https://github.com/capecodehq/mojito_app_hybrid_example.git
 
+## Install Mojito
+
+You will need [nodejs](http://nodejs.org/) and [npm](https://npmjs.org/) installed to do this.
+
+	> npm install mojito -g
+
 ## Run with a Mojito Server
 
 Start the server;
@@ -17,6 +23,10 @@ Open in a web browser [http://localhost:8666/](http://localhost:8666/)
 	> ./scripts/edge-cache-build
 
 You can now serve the contents of the "./builds/edge-cache/" directory with Connect, Apache or GitHub [like this example](http://capecodehq.github.com/mojito_app_hybrid_example/).
+
+The files can also be tested locally by running this script;
+
+	> ./scripts/test-edge-cache.js
 
 ## Build for use with the Cocktails Runtime
 

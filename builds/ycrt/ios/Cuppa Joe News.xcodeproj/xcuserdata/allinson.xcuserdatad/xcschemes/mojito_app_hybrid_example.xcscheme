@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "932B382C14E9F8DE001778C1"
-               BuildableName = "mojito_app_hybrid_example.app"
+               BuildableName = "Cuppa Joe News.app"
                BlueprintName = "mojito_app_hybrid_example"
                ReferencedContainer = "container:Cuppa Joe News.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "932B382C14E9F8DE001778C1"
-            BuildableName = "mojito_app_hybrid_example.app"
+            BuildableName = "Cuppa Joe News.app"
             BlueprintName = "mojito_app_hybrid_example"
             ReferencedContainer = "container:Cuppa Joe News.xcodeproj">
          </BuildableReference>
@@ -54,14 +54,13 @@
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
-      ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "932B382C14E9F8DE001778C1"
-            BuildableName = "mojito_app_hybrid_example.app"
+            BuildableName = "Cuppa Joe News.app"
             BlueprintName = "mojito_app_hybrid_example"
             ReferencedContainer = "container:Cuppa Joe News.xcodeproj">
          </BuildableReference>
@@ -79,7 +78,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "932B382C14E9F8DE001778C1"
-            BuildableName = "mojito_app_hybrid_example.app"
+            BuildableName = "Cuppa Joe News.app"
             BlueprintName = "mojito_app_hybrid_example"
             ReferencedContainer = "container:Cuppa Joe News.xcodeproj">
          </BuildableReference>
