@@ -22,7 +22,7 @@ Open in a web browser [http://localhost:8666/](http://localhost:8666/)
 
 	> ./scripts/edge-cache-build
 
-You can now serve the contents of the "./builds/edge-cache/" directory with Connect, Apache or GitHub [like this example](http://capecodehq.github.com/mojito_app_hybrid_example/).
+You can now serve the contents of the "./builds/edge-cache/" directory with Connect, Apache or GitHub [like this example](http://ricallinson.github.com/mojito_app_hybrid_example/).
 
 The files can also be tested locally by running this script;
 
