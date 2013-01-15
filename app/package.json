@@ -1,5 +1,5 @@
 {
-    "name": "hybrid",
+    "name": "mojito_app_hybrid_example_demo",
     "description": "Example Mojito Application",
     "version": "0.0.1",
     "author": {
@@ -7,12 +7,29 @@
         "email": "allinson@yahoo-inc.com"
     },
     "dependencies": {
-        "mojito": ">= 0.4.0"
+        "mojito": "0.4.9-2"
+    },
+    "devDependencies": {
+        "jslint": "*"
     },
     "engines": {
-        "node": ">= 0.6.0 < 0.7.0"
+        "node": ">= 0.6.0 < 0.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ricallinson/mojito_app_hybrid_example.git"
     },
     "scripts": {
         "start": "mojito start"
+    },
+    "yahoo": {
+        "bugzilla": {
+            "product": "",
+            "component": ""
+        },
+        "custodian": {
+            "email": "nobody@yahoo-inc.com",
+            "url": "http://www.yahoo.com"
+        }
     }
 }
