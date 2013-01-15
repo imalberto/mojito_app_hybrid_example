@@ -1,5 +1,6 @@
 {
     "name": "yahoo.hybrid.shared_model_addon",
+    "version": "0.0.1",
 
     "yahoo": {
         "mojito": {

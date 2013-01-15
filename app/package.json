@@ -6,6 +6,7 @@
         "name": "Ric Allinson",
         "email": "allinson@yahoo-inc.com"
     },
+    "contributors": [ ],
     "dependencies": {
         "mojito": "0.4.9-2"
     },
@@ -24,8 +25,8 @@
     },
     "yahoo": {
         "bugzilla": {
-            "product": "",
-            "component": ""
+            "product": "Demo",
+            "component": "Demo"
         },
         "custodian": {
             "email": "nobody@yahoo-inc.com",
