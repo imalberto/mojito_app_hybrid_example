@@ -1,6 +1,6 @@
 {
     "name": "yahoo.hybrid.infinitiefeed",
-
+    "version": "0.0.1",
     "yahoo": {
         "mojito": {
             "version": "*"

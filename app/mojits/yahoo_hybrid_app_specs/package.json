@@ -1,5 +1,6 @@
 {
     "name": "yahoo.hybrid.app_specs",
+    "version": "0.0.1",
 
     "yahoo": {
         "mojito": {

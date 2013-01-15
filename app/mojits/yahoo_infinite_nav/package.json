@@ -1,6 +1,7 @@
 
 {
     "name": "yahoo.hybrid.infinite_nav",
+    "version": "0.0.1",
 
     "yahoo": {
         "mojito": {
