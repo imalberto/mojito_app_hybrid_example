@@ -19,14 +19,17 @@ YUI.add('infinitiefeed', function (Y, NAME) {
      * @return {String} the delta between from and d, in human readable form
      */
 
-    function toRelativeTime(d,from) {
+    function toRelativeTime(d, from) {
         d    = d || new Date();
         from = from || new Date();
 
         var delta   = (from.getTime() - d.getTime()) / 1000,
             strings = toRelativeTime.strings,
             time    = "",
-            rel, tmp, months, years;
+            rel,
+            tmp,
+            months,
+            years;
 
         if (arguments.length < 2) {
             rel = (delta < 0) ? strings.fromnow : strings.ago;
@@ -50,8 +53,8 @@ YUI.add('infinitiefeed', function (Y, NAME) {
                delta < 172800 ? strings.day     : '';
 
         if (!time) {
-            d.setHours(0,0,0);
-            from.setHours(0,0,0);
+            d.setHours(0, 0, 0);
+            from.setHours(0, 0, 0);
             delta = Math.round((from.getTime() - d.getTime()) / 86400000);
 
             if (delta > 27) {
@@ -60,13 +63,13 @@ YUI.add('infinitiefeed', function (Y, NAME) {
 
                 if (months < 0) {
                     months += 12;
-                    years--;
+                    years = years - 1;
                 }
 
                 if (months) {
                     time = (months > 1) ?
-                        strings.months.replace(/X/, months) :
-                        strings.month;
+                            strings.months.replace(/X/, months) :
+                            strings.month;
 
                 }
 
@@ -76,8 +79,8 @@ YUI.add('infinitiefeed', function (Y, NAME) {
                     }
 
                     time = (years > 1 ?
-                        strings.years.replace(/X/, years) :
-                        strings.year) + time;
+                            strings.years.replace(/X/, years) :
+                            strings.year) + time;
                 }
             }
 
@@ -86,8 +89,8 @@ YUI.add('infinitiefeed', function (Y, NAME) {
                     tmp = Math.round(delta / 7);
 
                     time = (tmp > 1) ?
-                        strings.weeks.replace(/X/, tmp) :
-                        strings.week;
+                            strings.weeks.replace(/X/, tmp) :
+                            strings.week;
                 } else {
                     time = strings.days.replace(/X/, delta);
                 }
@@ -116,7 +119,7 @@ YUI.add('infinitiefeed', function (Y, NAME) {
         minutes : "X minutes",
         hour    : "about an hour",
         hours   : "about X hours",
-        day     : "1 day" ,
+        day     : "1 day",
         days    : "X days",
         week    : "about a week",
         weeks   : "X weeks",
@@ -170,7 +173,7 @@ YUI.add('infinitiefeed', function (Y, NAME) {
                     now = new Date().getTime();
 
                     Y.Array.each(items, function (item) {
-                        item.date = toRelativeTime(new Date(item.timestamp*1000));
+                        item.date = toRelativeTime(new Date(item.timestamp * 1000));
                     });
 
                     ac.done(data);
@@ -185,8 +188,12 @@ YUI.add('infinitiefeed', function (Y, NAME) {
 
             // Sort the array
             feeds.sort(function (a, b) {
-                if(a.title < b.title) return -1;
-                if(a.title > b.title) return 1;
+                if (a.title < b.title) {
+                    return -1;
+                }
+                if (a.title > b.title) {
+                    return 1;
+                }
                 return 0;
             });
 

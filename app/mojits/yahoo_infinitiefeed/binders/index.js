@@ -2,7 +2,8 @@
  * Copyright (c) 2012 Yahoo! Inc. All rights reserved.
  */
 
-/*global YUI: true*/
+/*jstlint browser:true*/
+/*global YUI:true, document:true, setInterval:true, setTimeout:true*/
 
 'use strict';
 
@@ -10,7 +11,8 @@ YUI.add('infinitie_feed_binder_index', function (Y, NAME) {
 
     var urlsOnPage = {},
         titlesOnPage = {},
-        doFaceBook = false;
+        doFaceBook = false,
+        FB;
 
     function hasScrolledIntoView(node, padding) {
 
@@ -42,12 +44,14 @@ YUI.add('infinitie_feed_binder_index', function (Y, NAME) {
     */
     function isOverflowed(el) {
 
-        var curOverflow = el.style.overflow;
+        var curOverflow = el.style.overflow,
+            isOverflowing;
 
-        if ( !curOverflow || curOverflow === "visible" )
-        el.style.overflow = "hidden";
+        if (!curOverflow || curOverflow === "visible") {
+            el.style.overflow = "hidden";
+        }
 
-        var isOverflowing = el.clientWidth < el.scrollWidth || el.clientHeight < el.scrollHeight;
+        isOverflowing = el.clientWidth < el.scrollWidth || el.clientHeight < el.scrollHeight;
 
         el.style.overflow = curOverflow;
 
@@ -284,7 +288,6 @@ YUI.add('infinitie_feed_binder_index', function (Y, NAME) {
                             item.show(true);
                             item.removeClass("new");
                         }, 200);
-                            
                     });
 
                     /*

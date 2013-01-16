@@ -4,7 +4,7 @@
 
 /*jslint nomen: true */
 
-/*global YUI: true, window: true, document: true*/
+/*global YUI: true, window: true, document: true, console: true, alert: true*/
 
 'use strict';
 

@@ -221,7 +221,7 @@ YUI.add('infinitiefeedmodel', function (Y, NAME) {
                         images: read.images,
                         url: item.link,
                         date: item.pubDate,
-                        timestamp: Math.round(Date.parse(item.pubDate)/1000),
+                        timestamp: Math.round(Date.parse(item.pubDate) / 1000),
                         group: feedCfgs[feedId].title
                     };
 
@@ -280,8 +280,8 @@ YUI.add('infinitiefeedmodel', function (Y, NAME) {
 
         getFeed: function (feedIds, offset, limit, callback) {
 
-            offset = parseInt(offset) || 0;
-            limit = parseInt(limit) || this.cfg.limit || 10;
+            offset = parseInt(offset, 10) || 0;
+            limit = parseInt(limit, 10) || this.cfg.limit || 10;
 
             if (!Y.Array.test(feedIds) || feedIds.length <= 0) {
                 feedIds = this.cfg.feedIds;

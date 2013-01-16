@@ -21,8 +21,8 @@ YUI.add('yahoo_hybrid_app_usermodel', function (Y, NAME) {
             var i;
 
             // Remove any null values
-            for (var i = 0; i < config.length; i++) {
-                if (!config[i]) {         
+            for (i = 0; i < config.length; i = i + 1) {
+                if (!config[i]) {
                     config.splice(i, 1);
                     i = i - 1;
                 }
