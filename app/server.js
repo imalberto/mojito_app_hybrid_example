@@ -5,10 +5,12 @@
  */
 
 
-/*jslint anon:true, sloppy:true*/
+/*jslint node:true*/
 
 
 /**
  * Returns a new Mojito server instance.
  */
-module.exports = require('mojito').createServer();
+var app = require('mojito').createServer();
+
+module.exports = app.listen();
